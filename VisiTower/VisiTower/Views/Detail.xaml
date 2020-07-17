@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VisiTower.Views.Detail"
+             Title="Menu"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Spacing="20">
+            <Label Text="VisiTower" TextColor="Black" FontSize="30" HorizontalOptions="CenterAndExpand"></Label>
+            
+            <StackLayout Spacing="20">
+                <ListView x:Name="ListaTimes">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding Nome}" Detail="{Binding Status}"
+                                       ImageSource="{Binding ImagemUrl}"
+                                       TextColor="Black" DetailColor="Gray"></ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout Padding="0, 0 , 15 , 80 ">
+                    <Button Text="Continuar"  TextColor="Black"  BackgroundColor="White" BorderWidth="2" BorderColor="Black"
+                    FontSize="17" HorizontalOptions="CenterAndExpand"></Button>
+                </StackLayout>
+            </StackLayout>
+            
+        </StackLayout>
+        
+   
+    </ContentPage.Content>
+</ContentPage>

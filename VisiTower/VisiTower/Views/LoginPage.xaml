@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VisiTower.Views.LoginPage" Title="Login"
+             NavigationPage.HasNavigationBar="False">
+   
+    <ContentPage.Content>
+        
+        <StackLayout Spacing="20">
+            <StackLayout Padding="105, 60, 100, 20">
+            <Image Source="LoginCerto.png" WidthRequest="150" ></Image>
+            </StackLayout>
+            <Label Text="Login" TextColor="Black" FontSize="30" Padding="165, 10 , 100, 20"></Label>
+            <Entry x:Name="Email" Placeholder="Insira o email" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" WidthRequest=" 315"></Entry>
+            <Entry x:Name="Senha" Placeholder="Insira a senha" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" WidthRequest=" 315"></Entry>
+            <Button Text="Ainda não tem uma conta cadastre-se" TextColor="DarkBlue"
+                    FontSize="17" BackgroundColor="White" Clicked="ButtonCadastar_Clicked"></Button>
+            <Button Text="Entrar"  TextColor="Black"  BackgroundColor="White" BorderWidth="2" BorderColor="Black"
+                    FontSize="17" HorizontalOptions="Center" Clicked="ButtonEntrar_Clicked"></Button>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
